@@ -1,14 +1,533 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
 
-</FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageView_0"
+                android:layout_width="107dp"
+                android:layout_height="103dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_0" />
+
+            <TextView
+                android:id="@+id/textView_film_title_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_0"
+                app:layout_constraintStart_toStartOf="@+id/imageView_0"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_0" />
+
+            <Button
+                android:id="@+id/button_favorite_0"
+                android:layout_width="35dp"
+                android:layout_height="43dp"
+                app:icon="@drawable/ic_baseline_favorite_24"
+                app:iconGravity="top"
+                app:iconTint="#C3C0C0"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_0"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_0"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:text="fav" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageView_1"
+                android:layout_width="107dp"
+                android:layout_height="103dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_1" />
+
+            <TextView
+                android:id="@+id/textView_film_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_1"
+                app:layout_constraintStart_toStartOf="@+id/imageView_1"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_1" />
+
+            <Button
+                android:id="@+id/button_favorite_1"
+                android:layout_width="35dp"
+                android:layout_height="43dp"
+                app:icon="@drawable/ic_baseline_favorite_24"
+                app:iconGravity="top"
+                app:iconTint="#C3C0C0"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_1"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_1"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:text="fav" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageView_2"
+                android:layout_width="107dp"
+                android:layout_height="103dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_2" />
+
+            <TextView
+                android:id="@+id/textView_film_title_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_2"
+                app:layout_constraintStart_toStartOf="@+id/imageView_2"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_2" />
+
+            <Button
+                android:id="@+id/button_favorite_2"
+                android:layout_width="35dp"
+                android:layout_height="43dp"
+                app:icon="@drawable/ic_baseline_favorite_24"
+                app:iconGravity="top"
+                app:iconTint="#C3C0C0"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_2"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_2"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:text="fav" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageView_3"
+                android:layout_width="107dp"
+                android:layout_height="103dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_3" />
+
+            <TextView
+                android:id="@+id/textView_film_title_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_3"
+                app:layout_constraintStart_toStartOf="@+id/imageView_3"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_3" />
+
+            <Button
+                android:id="@+id/button_favorite_3"
+                android:layout_width="35dp"
+                android:layout_height="43dp"
+                app:icon="@drawable/ic_baseline_favorite_24"
+                app:iconGravity="top"
+                app:iconTint="#C3C0C0"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_3"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_3"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:text="fav" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageView_4"
+                android:layout_width="107dp"
+                android:layout_height="103dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_4" />
+
+            <TextView
+                android:id="@+id/textView_film_title_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_4"
+                app:layout_constraintStart_toStartOf="@+id/imageView_4"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_4" />
+
+            <Button
+                android:id="@+id/button_favorite_4"
+                android:layout_width="35dp"
+                android:layout_height="43dp"
+                app:icon="@drawable/ic_baseline_favorite_24"
+                app:iconGravity="top"
+                app:iconTint="#C3C0C0"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_4"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_4"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:text="fav" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageView_5"
+                android:layout_width="107dp"
+                android:layout_height="103dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_5" />
+
+            <TextView
+                android:id="@+id/textView_film_title_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_5"
+                app:layout_constraintStart_toStartOf="@+id/imageView_5"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_5" />
+
+            <Button
+                android:id="@+id/button_favorite_5"
+                android:layout_width="35dp"
+                android:layout_height="43dp"
+                app:icon="@drawable/ic_baseline_favorite_24"
+                app:iconGravity="top"
+                app:iconTint="#C3C0C0"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_5"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_5"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:text="fav" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageView_6"
+                android:layout_width="107dp"
+                android:layout_height="103dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_6" />
+
+            <TextView
+                android:id="@+id/textView_film_title_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_6"
+                app:layout_constraintStart_toStartOf="@+id/imageView_6"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_6" />
+
+            <Button
+                android:id="@+id/button_favorite_6"
+                android:layout_width="35dp"
+                android:layout_height="43dp"
+                app:icon="@drawable/ic_baseline_favorite_24"
+                app:iconGravity="top"
+                app:iconTint="#C3C0C0"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_6"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_6"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:text="fav" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageView_7"
+                android:layout_width="107dp"
+                android:layout_height="103dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_7" />
+
+            <TextView
+                android:id="@+id/textView_film_title_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_7"
+                app:layout_constraintStart_toStartOf="@+id/imageView_7"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_7" />
+
+            <Button
+                android:id="@+id/button_favorite_7"
+                android:layout_width="35dp"
+                android:layout_height="43dp"
+                app:icon="@drawable/ic_baseline_favorite_24"
+                app:iconGravity="top"
+                app:iconTint="#C3C0C0"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_7"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_7"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:text="fav" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageView_8"
+                android:layout_width="107dp"
+                android:layout_height="103dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_8" />
+
+            <TextView
+                android:id="@+id/textView_film_title_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_8"
+                app:layout_constraintStart_toStartOf="@+id/imageView_8"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_8" />
+
+            <Button
+                android:id="@+id/button_favorite_8"
+                android:layout_width="35dp"
+                android:layout_height="43dp"
+                app:icon="@drawable/ic_baseline_favorite_24"
+                app:iconGravity="top"
+                app:iconTint="#C3C0C0"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_8"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_8"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:text="fav" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageView_9"
+                android:layout_width="107dp"
+                android:layout_height="103dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_9" />
+
+            <TextView
+                android:id="@+id/textView_film_title_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_9"
+                app:layout_constraintStart_toStartOf="@+id/imageView_9"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_9" />
+
+            <Button
+                android:id="@+id/button_favorite_9"
+                android:layout_width="35dp"
+                android:layout_height="43dp"
+                app:icon="@drawable/ic_baseline_favorite_24"
+                app:iconGravity="top"
+                app:iconTint="#C3C0C0"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_9"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_9"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:text="fav" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageView_10"
+                android:layout_width="107dp"
+                android:layout_height="103dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_10" />
+
+            <TextView
+                android:id="@+id/textView_film_title_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_10"
+                app:layout_constraintStart_toStartOf="@+id/imageView_10"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_10" />
+
+            <Button
+                android:id="@+id/button_favorite_10"
+                android:layout_width="35dp"
+                android:layout_height="43dp"
+                app:icon="@drawable/ic_baseline_favorite_24"
+                app:iconGravity="top"
+                app:iconTint="#C3C0C0"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_10"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_10"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:text="fav" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageView_11"
+                android:layout_width="107dp"
+                android:layout_height="103dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_11" />
+
+            <TextView
+                android:id="@+id/textView_film_title_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_11"
+                app:layout_constraintStart_toStartOf="@+id/imageView_11"
+                app:layout_constraintTop_toBottomOf="@+id/imageView_11" />
+
+            <Button
+                android:id="@+id/button_favorite_11"
+                android:layout_width="35dp"
+                android:layout_height="43dp"
+                app:icon="@drawable/ic_baseline_favorite_24"
+                app:iconGravity="top"
+                app:iconTint="#C3C0C0"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView_11"
+                app:layout_constraintEnd_toEndOf="@+id/imageView_11"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:text="fav" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+</ScrollView>
