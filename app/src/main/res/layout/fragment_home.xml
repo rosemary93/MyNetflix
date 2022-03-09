@@ -42,7 +42,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="TextView"
+                    android:text="film1"
                     app:layout_constraintEnd_toEndOf="@+id/imageView_0"
                     app:layout_constraintStart_toStartOf="@+id/imageView_0"
                     app:layout_constraintTop_toBottomOf="@+id/imageView_0" />
@@ -82,7 +82,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="TextView"
+                    android:text="film2"
                     app:layout_constraintEnd_toEndOf="@+id/imageView_1"
                     app:layout_constraintStart_toStartOf="@+id/imageView_1"
                     app:layout_constraintTop_toBottomOf="@+id/imageView_1" />
@@ -122,7 +122,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="TextView"
+                    android:text="film3"
                     app:layout_constraintEnd_toEndOf="@+id/imageView_2"
                     app:layout_constraintStart_toStartOf="@+id/imageView_2"
                     app:layout_constraintTop_toBottomOf="@+id/imageView_2" />
@@ -170,7 +170,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="TextView"
+                    android:text="film4"
                     app:layout_constraintEnd_toEndOf="@+id/imageView_3"
                     app:layout_constraintStart_toStartOf="@+id/imageView_3"
                     app:layout_constraintTop_toBottomOf="@+id/imageView_3" />
@@ -210,7 +210,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="TextView"
+                    android:text="film5"
                     app:layout_constraintEnd_toEndOf="@+id/imageView_4"
                     app:layout_constraintStart_toStartOf="@+id/imageView_4"
                     app:layout_constraintTop_toBottomOf="@+id/imageView_4" />
@@ -250,7 +250,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="TextView"
+                    android:text="film6"
                     app:layout_constraintEnd_toEndOf="@+id/imageView_5"
                     app:layout_constraintStart_toStartOf="@+id/imageView_5"
                     app:layout_constraintTop_toBottomOf="@+id/imageView_5" />
@@ -298,7 +298,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="TextView"
+                    android:text="film7"
                     app:layout_constraintEnd_toEndOf="@+id/imageView_6"
                     app:layout_constraintStart_toStartOf="@+id/imageView_6"
                     app:layout_constraintTop_toBottomOf="@+id/imageView_6" />
@@ -338,7 +338,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="TextView"
+                    android:text="film8"
                     app:layout_constraintEnd_toEndOf="@+id/imageView_7"
                     app:layout_constraintStart_toStartOf="@+id/imageView_7"
                     app:layout_constraintTop_toBottomOf="@+id/imageView_7" />
@@ -378,7 +378,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="TextView"
+                    android:text="film9"
                     app:layout_constraintEnd_toEndOf="@+id/imageView_8"
                     app:layout_constraintStart_toStartOf="@+id/imageView_8"
                     app:layout_constraintTop_toBottomOf="@+id/imageView_8" />
@@ -427,7 +427,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="TextView"
+                    android:text="film10"
                     app:layout_constraintEnd_toEndOf="@+id/imageView_9"
                     app:layout_constraintStart_toStartOf="@+id/imageView_9"
                     app:layout_constraintTop_toBottomOf="@+id/imageView_9" />
@@ -467,7 +467,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="TextView"
+                    android:text="film11"
                     app:layout_constraintEnd_toEndOf="@+id/imageView_10"
                     app:layout_constraintStart_toStartOf="@+id/imageView_10"
                     app:layout_constraintTop_toBottomOf="@+id/imageView_10" />
@@ -507,7 +507,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="TextView"
+                    android:text="film12"
                     app:layout_constraintEnd_toEndOf="@+id/imageView_11"
                     app:layout_constraintStart_toStartOf="@+id/imageView_11"
                     app:layout_constraintTop_toBottomOf="@+id/imageView_11" />
