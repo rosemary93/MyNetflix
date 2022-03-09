@@ -24,7 +24,11 @@
         android:id="@+id/profileFragment"
         android:name="com.example.mynetflix.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_showUserInfoFragment"
+            app:destination="@id/showUserInfoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/comingSoonFragment"
         android:name="com.example.mynetflix.ComingSoonFragment"
@@ -35,4 +39,9 @@
         android:name="com.example.mynetflix.FavoriteFragment"
         android:label="fragment_favorite"
         tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/showUserInfoFragment"
+        android:name="com.example.mynetflix.ShowUserInfoFragment"
+        android:label="fragment_show_user_info"
+        tools:layout="@layout/fragment_show_user_info" />
 </navigation>
