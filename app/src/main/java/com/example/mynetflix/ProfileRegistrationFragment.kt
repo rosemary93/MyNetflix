@@ -6,11 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.mynetflix.databinding.FragmentProfileBinding
+import com.example.mynetflix.databinding.FragmentProfileRegistrationBinding
 
 
-class ProfileFragment : Fragment() {
-    lateinit var binding: FragmentProfileBinding
+class ProfileRegistrationFragment : Fragment() {
+    lateinit var binding: FragmentProfileRegistrationBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -20,7 +20,7 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding= FragmentProfileBinding.inflate(inflater,container,false)
+        binding= FragmentProfileRegistrationBinding.inflate(inflater,container,false)
         // Inflate the layout for this fragment
         return binding.root
     }
@@ -32,7 +32,7 @@ class ProfileFragment : Fragment() {
             findNavController().navigate(R.id.action_profileFragment_to_showUserInfoFragment)
         }*/
         binding.buttonRegister.setOnClickListener {
-            findNavController().navigate(R.id.action_profileFragment_to_showUserInfoFragment)
+           // findNavController().navigate()
         }
     }
 

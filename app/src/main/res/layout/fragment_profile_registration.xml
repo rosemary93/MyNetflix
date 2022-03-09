@@ -7,7 +7,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="5dp"
-    tools:context=".ProfileFragment">
+    tools:context=".ProfileRegistrationFragment">
 
     <EditText
         android:id="@+id/editText_name"

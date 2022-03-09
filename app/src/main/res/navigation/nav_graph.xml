@@ -11,23 +11,14 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_homeFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
-        <action
             android:id="@+id/action_homeFragment_to_comingSoonFragment"
             app:destination="@id/comingSoonFragment" />
         <action
             android:id="@+id/action_homeFragment_to_favoriteFragment"
             app:destination="@id/favoriteFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.example.mynetflix.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" >
         <action
-            android:id="@+id/action_profileFragment_to_showUserInfoFragment"
-            app:destination="@id/showUserInfoFragment" />
+            android:id="@+id/action_homeFragment_to_profileRegistrationFragment"
+            app:destination="@id/profileRegistrationFragment" />
     </fragment>
     <fragment
         android:id="@+id/comingSoonFragment"
@@ -40,8 +31,17 @@
         android:label="fragment_favorite"
         tools:layout="@layout/fragment_favorite" />
     <fragment
-        android:id="@+id/showUserInfoFragment"
+        android:id="@+id/profileRegistrationFragment"
+        android:name="com.example.mynetflix.ProfileRegistrationFragment"
+        android:label="fragment_profile_registration"
+        tools:layout="@layout/fragment_profile_registration" >
+        <action
+            android:id="@+id/action_profileRegistrationFragment_to_showProfileFragment"
+            app:destination="@id/showProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showProfileFragment"
         android:name="com.example.mynetflix.ShowUserInfoFragment"
-        android:label="fragment_show_user_info"
-        tools:layout="@layout/fragment_show_user_info" />
+        android:label="fragment_show_profile"
+        tools:layout="@layout/fragment_show_profile" />
 </navigation>

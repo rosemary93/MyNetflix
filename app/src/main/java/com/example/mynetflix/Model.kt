@@ -10,9 +10,9 @@ data class Film(var title: String, var imageID: Int) {
 }
 
 class UserInfo(
-    var name: String? = null,
-    var familyName: String? = null,
-    var emailAddress: String? = null
+    var name: String ="",
+    var familyName: String ="",
+    var emailAddress: String =""
 ) {
     var phoneNumber: String=""
     var username: String=""
