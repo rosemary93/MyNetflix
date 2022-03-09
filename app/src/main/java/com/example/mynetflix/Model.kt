@@ -3,6 +3,7 @@ package com.example.mynetflix
 object NetflixEnvironment {
     var userInfo: UserInfo? = null
     val filmList = ArrayList<Film>()
+    val comingSoonList=ArrayList<Film>()
 
     fun testData(){
         filmList.add(Film("film1",R.drawable.icon_0))
@@ -17,6 +18,9 @@ object NetflixEnvironment {
         filmList.add(Film("film10",R.drawable.icon_9))
         filmList.add(Film("film11",R.drawable.icon_10))
         filmList.add(Film("film12",R.drawable.icon_11))
+        comingSoonList.add(Film("coming soon 1",R.drawable.coming_soon_0))
+        comingSoonList.add(Film("coming soon 2",R.drawable.coming_soon_1))
+        comingSoonList.add(Film("coming soon 3",R.drawable.coming_soon_2))
     }
 }
 

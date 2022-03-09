@@ -33,7 +33,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         createViewsArrays()
-        //initLastViews()
+        initLastViews()
 
 
         for (i in 0 until favoriteButtonList.size)
