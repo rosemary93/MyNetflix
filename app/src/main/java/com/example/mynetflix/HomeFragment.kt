@@ -29,7 +29,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonFavorite0.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_profileFragment)
+            findNavController().navigate(R.id.action_homeFragment_to_comingSoonFragment)
         }
     }
 }
