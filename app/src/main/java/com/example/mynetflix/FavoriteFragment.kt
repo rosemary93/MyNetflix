@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.navigation.fragment.findNavController
 import com.example.mynetflix.databinding.FragmentFavoriteBinding
 
 
@@ -42,6 +43,10 @@ class FavoriteFragment : Fragment() {
                     index++
                 }
             }
+        }
+
+        binding.buttonFavFrgmntBack.setOnClickListener {
+            findNavController().navigate(R.id.action_favoriteFragment_to_homeFragment)
         }
     }
 

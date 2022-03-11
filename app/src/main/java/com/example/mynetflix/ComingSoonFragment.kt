@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.navigation.fragment.findNavController
 import com.example.mynetflix.databinding.FragmentComingSoonBinding
 
 
@@ -57,6 +58,10 @@ class ComingSoonFragment : Fragment() {
                 val shareIntent = Intent.createChooser(sendIntent, null)
                 startActivity(shareIntent)
             }
+        }
+
+        binding.buttonComingsoonFrgmntBack.setOnClickListener {
+            findNavController().navigate(R.id.action_comingSoonFragment_to_homeFragment)
         }
     }
 

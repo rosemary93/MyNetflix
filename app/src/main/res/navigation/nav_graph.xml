@@ -24,12 +24,20 @@
         android:id="@+id/comingSoonFragment"
         android:name="com.example.mynetflix.ComingSoonFragment"
         android:label="fragment_coming_soon"
-        tools:layout="@layout/fragment_coming_soon" />
+        tools:layout="@layout/fragment_coming_soon" >
+        <action
+            android:id="@+id/action_comingSoonFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/favoriteFragment"
         android:name="com.example.mynetflix.FavoriteFragment"
         android:label="fragment_favorite"
-        tools:layout="@layout/fragment_favorite" />
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/profileRegistrationFragment"
         android:name="com.example.mynetflix.ProfileRegistrationFragment"

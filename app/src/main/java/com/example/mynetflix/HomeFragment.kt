@@ -30,6 +30,11 @@ class HomeFragment : Fragment() {
         return binding.root
     }
 
+    override fun onResume() {
+        super.onResume()
+        //initLastViews()
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         createViewsArrays()
@@ -60,8 +65,6 @@ class HomeFragment : Fragment() {
             if (NetflixEnvironment.filmList[i].isFavorite)
                 favoriteButtonList[i].setBackgroundColor(Color.RED)
         }
-
-
     }
 
     //for adding menu and set items listeners
