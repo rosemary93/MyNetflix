@@ -1,6 +1,5 @@
 package com.example.mynetflix
 
-import android.graphics.Color
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
@@ -38,6 +37,15 @@ class HomeFragment : Fragment() {
         //initLastViews()
         var adapter=ListAdapter(NetflixEnvironment.filmList)
         binding.rvFilmList.adapter=adapter
+
+        adapter.setOnButtonClickListener(object :ListAdapter.onButtonClickListener{
+            override fun onButtonClick(position: Int) {
+                adapter.dataset[position].isFavorite=(!adapter.dataset[position].isFavorite)
+            }
+        })
+
+
+
 
 
 /*
