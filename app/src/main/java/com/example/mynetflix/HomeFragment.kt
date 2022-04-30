@@ -30,16 +30,17 @@ class HomeFragment : Fragment() {
         return binding.root
     }
 
-    override fun onResume() {
-        super.onResume()
-        //initLastViews()
-    }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        createViewsArrays()
-        initLastViews()
+        //createViewsArrays()
+        //initLastViews()
+        var adapter=ListAdapter(NetflixEnvironment.filmList)
+        binding.rvFilmList.adapter=adapter
 
+
+/*
 
         for (i in 0 until favoriteButtonList.size)
         {
@@ -53,19 +54,20 @@ class HomeFragment : Fragment() {
                 }
             }
         }
+*/
 
 
 
     }
 
-    fun initLastViews(){
+   /* fun initLastViews(){
         for (i in 0..11)
         {
             textViewList[i].text=NetflixEnvironment.filmList[i].title
             if (NetflixEnvironment.filmList[i].isFavorite)
                 favoriteButtonList[i].setBackgroundColor(Color.RED)
         }
-    }
+    }*/
 
     //for adding menu and set items listeners
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
@@ -90,7 +92,7 @@ class HomeFragment : Fragment() {
         }
         return super.onOptionsItemSelected(item)
     }
-    fun createViewsArrays()
+    /*fun createViewsArrays()
     {
         createButtonArray()
         createImageViewArray()
@@ -140,5 +142,5 @@ class HomeFragment : Fragment() {
         textViewList.add(binding.textViewFilmTitle9)
         textViewList.add(binding.textViewFilmTitle10)
         textViewList.add(binding.textViewFilmTitle11)
-    }
+    }*/
 }
