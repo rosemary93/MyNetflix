@@ -37,10 +37,7 @@ class HomeFragment : Fragment() {
         var adapter=ListAdapter(vmodel.getAllFilms())
         binding.rvFilmList.adapter=adapter
 
-        for (i in 0..29)
-        {
 
-        }
         adapter.setOnButtonClickListener(object :ListAdapter.onButtonClickListener{
             override fun onButtonClick(position: Int) {
                 val tempFilm=vmodel.getAllFilms()[position]

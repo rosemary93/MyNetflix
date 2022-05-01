@@ -10,12 +10,12 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mynetflix.database.Film
-
+import com.example.mynetflix.databinding.FragmentHomeBinding
 
 class ListAdapter(var dataset:List<Film>):RecyclerView.Adapter<ListAdapter.ListViewHolder>() {
 lateinit var buttonListener:onButtonClickListener
 
-interface onButtonClickListener{
+    interface onButtonClickListener{
     fun onButtonClick(position: Int)
 }
 
@@ -64,11 +64,18 @@ inner class ListViewHolder(itemview: View,listener:onButtonClickListener):Recycl
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
 
-        if (dataset[position].isFavorite)
+        if (dataset[position].isFavorite==true)
         {
             holder.isFavoriteBtn.setCompoundDrawablesWithIntrinsicBounds(
                 0,
                 R.drawable.ic_baseline_favorite_red_24,
+                0,
+                0
+            )
+        }else{
+            holder.isFavoriteBtn.setCompoundDrawablesWithIntrinsicBounds(
+                0,
+                R.drawable.ic_baseline_favorite_24,
                 0,
                 0
             )

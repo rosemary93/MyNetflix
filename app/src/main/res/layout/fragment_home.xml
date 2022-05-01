@@ -536,27 +536,34 @@
 
 </ScrollView>
 -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFCFF4">
+    xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_film_list"
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="600sp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        android:background="#FFCFF4" />
+        android:layout_height="match_parent"
+        android:background="#FFCFF4">
 
-    <Button
-        android:id="@+id/button_add_test_data"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="20sp"
-        android:text="add test data" />
-</LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_film_list"
+            android:layout_width="match_parent"
+            android:layout_height="600sp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:background="#FFCFF4" />
+
+        <Button
+            android:id="@+id/button_add_test_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20sp"
+            android:text="add test data" />
+    </LinearLayout>
+</layout>
