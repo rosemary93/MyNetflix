@@ -8,10 +8,10 @@ interface FilmDao {
     fun getAllFilms():List<Film>
 
     @Query("SELECT * FROM Film WHERE id IN (:filmID)")
-    fun getFilmByID(filmID:Int)
+    fun getFilmByID(filmID:Int):Film
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertWord(film: Film)
+    fun insertFilm(film: Film)
 
     @Update
     fun updateFilm(film: Film)

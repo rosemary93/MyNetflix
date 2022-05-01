@@ -7,12 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.mynetflix.databinding.FragmentFavoriteBinding
 
 
 class FavoriteFragment : Fragment() {
     lateinit var binding: FragmentFavoriteBinding
+    val vmodel: MainViewModel by viewModels()
     val imageViewsArray = ArrayList<ImageView>()
     val textViewsArray = ArrayList<TextView>()
     var index=0
@@ -34,8 +36,8 @@ class FavoriteFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         createImageViewsArray()
         createTextViewsArray()
-        if (NetflixEnvironment.userInfo != null) {
-            for (film in NetflixEnvironment.filmList) {
+        if (vmodel.getDataFromSharedPref(requireActivity()) != null) {
+            for (film in vmodel.getAllFilms()) {
                 if (film.isFavorite)
                 {
                     imageViewsArray[index].setImageResource(film.imageID)

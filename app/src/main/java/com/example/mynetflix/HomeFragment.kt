@@ -6,19 +6,18 @@ import androidx.fragment.app.Fragment
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.mynetflix.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
     lateinit var binding: FragmentHomeBinding
-    val favoriteButtonList = ArrayList<Button>()
-    val imageViewList=ArrayList<ImageView>()
-    val textViewList=ArrayList<TextView>()
+    val vmodel: MainViewModel by viewModels()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
-        NetflixEnvironment.testData()
     }
 
     override fun onCreateView(
@@ -35,19 +34,26 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         //createViewsArrays()
         //initLastViews()
-        var adapter=ListAdapter(NetflixEnvironment.filmList)
+        var adapter=ListAdapter(vmodel.getAllFilms())
         binding.rvFilmList.adapter=adapter
 
+        for (i in 0..29)
+        {
+
+        }
         adapter.setOnButtonClickListener(object :ListAdapter.onButtonClickListener{
             override fun onButtonClick(position: Int) {
-                adapter.dataset[position].isFavorite=(!adapter.dataset[position].isFavorite)
+                val tempFilm=vmodel.getAllFilms()[position]
+                tempFilm.isFavorite=(!tempFilm.isFavorite)
+                vmodel.updateFilm(tempFilm)
+                adapter.dataset=vmodel.getAllFilms()
+                //adapter.notifyItemChanged(position)
             }
         })
 
-
-
-
-
+        binding.buttonAddTestData.setOnClickListener {
+            vmodel.addTestData()
+        }
 /*
 
         for (i in 0 until favoriteButtonList.size)

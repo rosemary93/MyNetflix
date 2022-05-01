@@ -553,10 +553,10 @@
         android:background="#FFCFF4" />
 
     <Button
-        android:id="@+id/button_grid_view"
+        android:id="@+id/button_add_test_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="20sp"
-        android:text="grid view" />
+        android:text="add test data" />
 </LinearLayout>

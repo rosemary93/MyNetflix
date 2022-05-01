@@ -7,12 +7,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.mynetflix.databinding.FragmentComingSoonBinding
 
 
 class ComingSoonFragment : Fragment() {
     lateinit var binding: FragmentComingSoonBinding
+    val vmodel: MainViewModel by viewModels()
     val shareButtons = ArrayList<Button>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,7 +39,7 @@ class ComingSoonFragment : Fragment() {
     }
 
     fun setButtonsEnableOrDisable() {
-        if (NetflixEnvironment.userInfo != null) {
+        if (vmodel.getDataFromSharedPref(requireActivity()) != null) {
             for (i in 0..2)
                 shareButtons[i].isEnabled = true
         } else {
@@ -52,7 +54,7 @@ class ComingSoonFragment : Fragment() {
                 shareButtons[i].isEnabled = true
                 val sendIntent: Intent = Intent().apply {
                     action = Intent.ACTION_SEND
-                    putExtra(Intent.EXTRA_TEXT, NetflixEnvironment.comingSoonList[i].title)
+                    putExtra(Intent.EXTRA_TEXT, vmodel.comingSoonList[i].title)
                     type = "text/plain"
                 }
                 val shareIntent = Intent.createChooser(sendIntent, null)
