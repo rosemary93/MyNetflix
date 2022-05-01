@@ -4,4 +4,7 @@
     android:state_selected="true"/>
     <item android:drawable="@drawable/ic_baseline_favorite_24"
         android:state_selected="false"/>
+    <!-- if you want to use selector in specific xml add
+    android:src and set name of selector and in code use isSelected to set on everything
+    like button-->
 </selector>

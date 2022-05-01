@@ -60,7 +60,6 @@
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="63dp"
             android:layout_height="56dp"
-            android:src="@drawable/selector"
             app:iconGravity="top"
             app:iconSize="40sp"
             app:layout_constraintBottom_toBottomOf="@+id/textView_film_name1"
