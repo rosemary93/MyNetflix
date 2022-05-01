@@ -1,11 +1,14 @@
 package com.example.mynetflix
 
-object NetflixEnvironment {
-    var userInfo: UserInfo? = null
+import com.example.mynetflix.database.Film
+
+var userInfo: UserInfo? = null
     val filmList = ArrayList<Film>()
     val comingSoonList=ArrayList<Film>()
 
+/*
     fun testData(){
+        filmList.clear()
         filmList.add(Film("film1",R.drawable.icon_0))
         filmList.add(Film("film2",R.drawable.icon_1))
         filmList.add(Film("film3",R.drawable.icon_2))
@@ -24,10 +27,7 @@ object NetflixEnvironment {
     }
 }
 
-data class Film(var title: String, var imageID: Int) {
-    var isFavorite = false
 
-}
 
 class UserInfo(
     var name: String ="",
@@ -37,3 +37,4 @@ class UserInfo(
     var phoneNumber: String=""
     var username: String=""
 }
+*/

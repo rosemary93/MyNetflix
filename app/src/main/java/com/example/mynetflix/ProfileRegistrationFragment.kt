@@ -5,12 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.mynetflix.databinding.FragmentProfileRegistrationBinding
 
 
 class ProfileRegistrationFragment : Fragment() {
     lateinit var binding: FragmentProfileRegistrationBinding
+    val vmodel: MainViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -27,24 +29,26 @@ class ProfileRegistrationFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        if (NetflixEnvironment.userInfo!=null)
+        if (vmodel.getDataFromSharedPref(requireActivity())!=null)
         {
             findNavController().navigate(R.id.action_profileRegistrationFragment_to_showProfileFragment)
         }
         binding.buttonRegister.setOnClickListener {
             if (areValidInputs()) {
-                NetflixEnvironment.userInfo = UserInfo(
+
+                val tempUserInfo = UserInfo(
                     binding.editTextName.text.toString(),
                     binding.editTextFamilyName.text.toString(),
                     binding.editTextEmailAdd.text.toString()
                 )
                 if (!binding.editTextPhone.text.isNullOrBlank())
-                    ((NetflixEnvironment.userInfo) as UserInfo).phoneNumber =
+                    tempUserInfo.phoneNumber =
                         binding.editTextPhone.text.toString()
                 if (!binding.editTextUsername.text.isNullOrBlank())
-                    ((NetflixEnvironment.userInfo) as UserInfo).username =
+                    tempUserInfo.username =
                         binding.editTextUsername.text.toString()
 
+                vmodel.saveDataInSharedPref(requireActivity(),tempUserInfo)
                 findNavController().navigate(R.id.action_profileRegistrationFragment_to_showProfileFragment)
 
             }
